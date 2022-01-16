@@ -1,9 +1,9 @@
 import os
 import json
-import codecs
+#import codecs
 
 
-path = 'to_%replays%_folder'      #get sure folder contains only replays
+path = 'A:\\Games\\World_of_Tanks_RU\\replays\\'      #get sure folder contains only replays
 
 
 def get_replays():                #parse all replays in folder. 

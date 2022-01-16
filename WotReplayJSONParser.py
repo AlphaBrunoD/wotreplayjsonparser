@@ -3,7 +3,7 @@ import json
 import codecs
 
 
-path = 'to %replays% folder'      #get sure folder contains only replays
+path = 'to_%replays%_folder'      #get sure folder contains only replays
 
 
 def get_replays():                #parse all replays in folder. 
@@ -15,7 +15,7 @@ def get_replays():                #parse all replays in folder.
 
 def relpay_read(replay):
     f = open(path + replay, 'rb')
-    d = open("path to destination.txt", 'a', encoding='utf-8')
+    d = open("path_to_destination.txt", 'a', encoding='utf-8')
     skip = f.read(8)                               #skip 8 non-informative bytes
     byteslen = f.read(4)
     length = int.from_bytes(byteslen, 'little')    #very cool func, love it. gets decimal without extra convertations

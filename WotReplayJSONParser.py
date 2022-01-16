@@ -11,7 +11,7 @@ def get_replays():                #parse all replays in folder.
     for replay in os.listdir(path):
         relpay_read(replay)
         print(str(n) + ' \ ' + str(len(os.listdir(path))) + '   ' + replay) #show progress
-        n = n + 1
+        n += 1
 
 def relpay_read(replay):
     f = open(path + replay, 'rb')
